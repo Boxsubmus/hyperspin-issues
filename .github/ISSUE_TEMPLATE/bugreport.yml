@@ -1,0 +1,34 @@
+name: Bug Report
+description: File a bug report.
+title: "[Bug]: "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to fill out this bug report!
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened? How can the issue be reproduced?
+      description: Please describe the issue in as much detail as possible.
+      placeholder: If possible, please include a screenshot or video of the issue in action!
+    validations:
+      required: true
+  - type: dropdown
+    id: platform
+    attributes:
+      label: Platform
+      description: What platform did you experience the bug on?
+      options:
+        - Windows Demo
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: What version of the game were you playing?
+      description: You can find the version number in the lower-right corner of the title screen.
+      placeholder: (e.g. 2026.509.0)
+    validations:
+      required: true
